@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+    <!-- Plastic Basic Research -->
+    <PlasticBasicResearch.label>basic plastic</PlasticBasicResearch.label>
+    <PlasticBasicResearch.description>Lightweight bio-plastic from plant materials. Basic-grade material suitable for simple furniture and structures.</PlasticBasicResearch.description>
+
+    <!-- Plastic Industrial Research -->
+    <PlasticIndustrialResearch.label>industrial plastic</PlasticIndustrialResearch.label>
+    <PlasticIndustrialResearch.description>Advanced bio-plastic with enhanced durability. Industrial-grade material for high-quality furniture and robust structures.</PlasticIndustrialResearch.description>
+
+    <!-- Plastic Fiber Research -->
+    <PlasticFiberResearch.label>plastic fiber</PlasticFiberResearch.label>
+    <PlasticFiberResearch.description>Synthetic textile fiber from bio-plastic. Suitable for clothing production and textile crafting.</PlasticFiberResearch.description>
+
+</LanguageData>

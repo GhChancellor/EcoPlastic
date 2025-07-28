@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+    <!-- Plastic Basic -->
+    <PlasticBasic.label>plastic basic</PlasticBasic.label>
+    <PlasticBasic.description>Lightweight bio-plastic from plant materials. Basic-grade material suitable for simple furniture and structures.</PlasticBasic.description>
+
+    <!-- Plastic Industrial -->
+    <PlasticIndustrial.label>plastic industrial</PlasticIndustrial.label>
+    <PlasticIndustrial.description>Advanced bio-plastic with enhanced durability. Industrial-grade material for high-quality furniture and robust structures.</PlasticIndustrial.description>
+
+    <!-- Plastic Fiber -->
+    <PlasticFiber.label>plastic fiber</PlasticFiber.label>
+    <PlasticFiber.description>Synthetic textile fiber from bio-plastic. Suitable for clothing production and textile crafting.</PlasticFiber.description>
+
+</LanguageData>
+
+

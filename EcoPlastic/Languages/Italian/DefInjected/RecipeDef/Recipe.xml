@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+    <!-- PlasticBasicRecipe -->
+    <PlasticBasicRecipe.label>produci plastica base</PlasticBasicRecipe.label>
+    <PlasticBasicRecipe.description>Bio-plastica leggera ricavata da materiali vegetali. Adatta per la costruzione di mobili e strutture ma di qualità inferiore.</PlasticBasicRecipe.description>
+    <PlasticBasicRecipe.jobString>producendo plastica base</PlasticBasicRecipe.jobString>
+
+    <!-- PlasticIndustrialRecipe -->
+    <PlasticIndustrialRecipe.label>produci plastica industriale</PlasticIndustrialRecipe.label>
+    <PlasticIndustrialRecipe.description>Bio-plastica resistente per costruzioni. Adatta per la costruzione di mobili e strutture ma di qualità superiore.</PlasticIndustrialRecipe.description>
+    <PlasticIndustrialRecipe.jobString>producendo plastica industriale</PlasticIndustrialRecipe.jobString>
+
+    <!-- PlasticFiberRecipe -->
+    <PlasticFiberRecipe.label>produci fibra plastica</PlasticFiberRecipe.label>
+    <PlasticFiberRecipe.description>Tessuto sintetico ricavato da bio-plastica. Adatto per la produzione di vestiti base e commercio.</PlasticFiberRecipe.description>
+    <PlasticFiberRecipe.jobString>producendo fibra plastica</PlasticFiberRecipe.jobString>
+
+    <!-- chemfuel from plastic-->
+    <ChemfuelFromPlasticRecipe.label>produci chemfuel da plastica</ChemfuelFromPlasticRecipe.label>
+    <ChemfuelFromPlasticRecipe.description>Converti plastic in chemfuel.</ChemfuelFromPlasticRecipe.description>
+    <ChemfuelFromPlasticRecipe.jobString>Converto plastic in chemfuel</ChemfuelFromPlasticRecipe.jobString>
+</LanguageData>
+

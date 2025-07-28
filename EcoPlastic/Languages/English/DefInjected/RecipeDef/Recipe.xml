@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+    <!-- Plastic Basic Recipe -->
+    <PlasticBasicRecipe.label>make basic plastic</PlasticBasicRecipe.label>
+    <PlasticBasicRecipe.description>Lightweight bio-plastic from plant materials. Basic-grade material suitable for simple furniture and structures.</PlasticBasicRecipe.description>
+    <PlasticBasicRecipe.jobString>producing basic plastic</PlasticBasicRecipe.jobString>
+
+    <!-- Plastic Industrial Recipe -->
+    <PlasticIndustrialRecipe.label>make industrial plastic</PlasticIndustrialRecipe.label>
+    <PlasticIndustrialRecipe.description>Advanced bio-plastic with enhanced durability. Industrial-grade material for high-quality furniture and robust structures.</PlasticIndustrialRecipe.description>
+    <PlasticIndustrialRecipe.jobString>producing industrial plastic</PlasticIndustrialRecipe.jobString>
+
+    <!-- Plastic Fiber Recipe -->
+    <PlasticFiberRecipe.label>make plastic fiber</PlasticFiberRecipe.label>
+    <PlasticFiberRecipe.description>Synthetic textile fiber from bio-plastic. Suitable for clothing production and textile crafting.</PlasticFiberRecipe.description>
+    <PlasticFiberRecipe.jobString>producing plastic fiber</PlasticFiberRecipe.jobString>
+
+    <!-- chemfuel from plastic-->
+    <ChemfuelFromPlasticRecipe.label>make chemfuel from plastic</ChemfuelFromPlasticRecipe.label>
+    <ChemfuelFromPlasticRecipe.description>Convert plastic into chemfuel.</ChemfuelFromPlasticRecipe.description>
+    <ChemfuelFromPlasticRecipe.jobString>converting plastic to chemfuel</ChemfuelFromPlasticRecipe.jobString>
+    
+</LanguageData>

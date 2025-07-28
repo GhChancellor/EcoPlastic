@@ -1,0 +1,43 @@
+# EcoPlastic - Descrizione Mod
+
+**EcoPlastic** trasforma RimWorld con materiali sostenibili per la tua colonia!
+
+## 🌨️ **Progettata per Climi Estremi**
+Specificamente pensata per biomi ostili dove il legno è raro o inesistente: deserti aridi, tundre ghiacciate e terre 
+desolate dell'Antartide. Sopravvivi e prospera anche negli ambienti più difficili!
+
+🌱 Produzione Ecologica
+Crea bio-plastica dalla raffineria di biocarburante ( biofuel refinery) da risorse vegetali comuni: agave, bacche, mais, 
+patate e riso. Niente più dipendenza dai trader per materiali avanzati!
+## 🔧 **Tre Materiali Specializzati**
+
+**Plastic Basic** - Materiale entry-level per mobili, strutture e svago di base. Economico e veloce da produrre.
+
+**Plastic Industrial** - Versione avanzata per costruzioni di alta qualità. Maggiore resistenza e bellezza per le tue strutture premium.
+
+**Plastic Fiber** - Tessuto sintetico per abbigliamento. Alternativa sostenibile al cotone per vestire la tua colonia.
+
+## ⚡ **Bonus Energetico**
+Ricicla tutte le plastiche in chemfuel! Trasforma gli scarti in energia per i tuoi generatori.
+
+## 🎯 **Vanilla Friendly**
+Integrazione perfetta con il gioco base. Bilanciato per gameplay equilibrato senza stravolgere l'esperienza RimWorld.
+
+**Sopravvivi agli estremi! Inizia la rivoluzione verde della tua colonia oggi stesso!**
+
+
+Material Types Planned:
+     PlasticBasic: Furniture only
+     PlasticIndustrial: Walls & furniture  
+     PlasticTech: Electronics only
+     PlasticFiber: Clothing 
+ 
+ // ThingDef - Porte w muri
+    <thingCategories>
+         <li>BuildingsMisc</li>
+    </thingCategories>
+    
+    BuildingsMisc → Muri, porte, pavimenti
+BuildingsProduction → Workbench, raffinerie
+BuildingsFurniture → Letti, tavoli, sedie
+ 
