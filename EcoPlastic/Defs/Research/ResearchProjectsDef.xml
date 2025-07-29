@@ -27,9 +27,10 @@
         <techLevel>Industrial</techLevel>
         <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
             <li>Electricity</li>
+            <li>Smithing</li>
             <li>BiofuelRefining</li>
-            <li>Machining</li>
             <li>PlasticBasicResearch</li>
+            <li>Machining</li>
         </prerequisites>
         <researchViewX>1.50</researchViewX> <!-- Position on tab research -->
         <researchViewY>1.10</researchViewY>
@@ -37,6 +38,28 @@
         <tab>EcoPlastic</tab>
     </ResearchProjectDef>
 
+    <!-- Plastic BioSteel Research -->
+    <ResearchProjectDef>
+        <defName>PlasticBioSteelResearch</defName>
+        <label>PlasticBioSteelResearch.label</label>
+        <description>PlasticBioSteelResearch.description</description>
+        <baseCost>2000</baseCost> <!-- research -->
+        <techLevel>Industrial</techLevel>
+        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+            <li>Electricity</li>
+            <li>Smithing</li>
+            <li>BiofuelRefining</li>
+            <li>PlasticBasicResearch</li>
+            <li>Machining</li>
+            <li>PlasticIndustrialResearch</li>
+            <li>MicroelectronicsBasics</li>
+        </prerequisites>
+        <researchViewX>2.50</researchViewX> <!-- Position on tab research -->
+        <researchViewY>0.90</researchViewY>
+
+        <tab>EcoPlastic</tab>
+    </ResearchProjectDef>
+    
     <!-- Plastic Fiber Research -->
     <ResearchProjectDef>
         <defName>PlasticFiberResearch</defName>

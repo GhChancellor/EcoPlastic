@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-    
+
     <!--  ================= Chem fuel From Plastic Recipe  ================= -->
     <RecipeDef>
         <!-- ID -->
@@ -11,10 +11,12 @@
 
         <!-- Mechanic CORE -->
         <jobString>ChemfuelFromPlasticRecipe.jobString</jobString>
-        <effectWorking>Cremate</effectWorking>
-        <soundWorking>Recipe_Cremate</soundWorking>
         <workAmount>2000</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
+
+        <!-- Preserves work progress if interrupted -->
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <displayPriority>0</displayPriority> <!-- priority work-->
 
         <!-- Where you craft it  -->
         <recipeUsers>
@@ -49,7 +51,12 @@
         <products>
             <Chemfuel>45</Chemfuel>
         </products>
+
+        <!-- Effect Working & sound -->
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
     </RecipeDef>
+    
 
     <!--  ================= Plastic Basic Recipe  ================= -->
     <RecipeDef>
@@ -64,7 +71,7 @@
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
         <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>PlasticBasicResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_PlasticBasic.png -->
-        
+
         <!-- Requirements -->
         <skillRequirements>
             <Crafting>5</Crafting>
@@ -121,15 +128,15 @@
     </RecipeDef>
 
 
-    <!--  ================= Plastic Industrial Recipe  ================= -->
+    ================= Plastic Industrial Recipe =================
     <RecipeDef>
         <!-- ID -->
         <defName>PlasticIndustrialRecipe</defName>
         <label>PlasticIndustrialRecipe.label</label>
         <description>PlasticIndustrialRecipe.description</description>
+        <jobString>PlasticIndustrialRecipe.jobString</jobString>
 
         <!-- Mechanic CORE -->
-        <jobString>PlasticIndustrialRecipe.jobString</jobString>
         <workAmount>1200</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
         <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
@@ -139,6 +146,10 @@
         <skillRequirements>
             <Crafting>5</Crafting>
         </skillRequirements>
+
+        <!-- Preserves work progress if interrupted -->
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <displayPriority>0</displayPriority> <!-- priority work-->
 
         <!-- Where you craft it  -->
         <recipeUsers>
@@ -189,7 +200,82 @@
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
     </RecipeDef>
-    
+
+    <!-- Plastic bioSteel Recipe -->
+    <RecipeDef>
+        <!-- ID -->
+        <defName>PlasticBioSteelRecipe</defName>
+        <label>PlasticBioSteelRecipe.label</label>
+        <description>PlasticBioSteelRecipe.description</description>
+        <jobString>PlasticBioSteelRecipe.jobString</jobString>
+
+        <!-- Mechanic CORE -->
+        <workAmount>5000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisite>PlasticBioSteelResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_PlasticBasic.png -->
+
+        <!-- Requirements -->
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+
+        <!-- Preserves work progress if interrupted -->
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <displayPriority>0</displayPriority> <!-- priority work-->
+
+        <!-- Where you craft it  -->
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+
+        <!-- INGREDIENTS -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PlasticIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>18</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+
+        <!-- Steel filtering -->
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>PlasticIndustrial</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+
+        <!-- OUTPUT material-->
+        <products>
+            <PlasticBioSteel>30</PlasticBioSteel>
+        </products>
+
+        <!-- Effect Working & sound -->
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+    </RecipeDef>
+
     <!--  ================= Plastic fiber Recipe  ================= -->
     <RecipeDef>
         <!-- ID -->
@@ -200,10 +286,10 @@
         <!-- Mechanic CORE -->
         <jobString>PlasticFiberRecipe.jobString</jobString>
         <workAmount>600</workAmount>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat --> 
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
         <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>PlasticFiberResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_PlasticBasic.png -->
-        
+
         <!-- Requirements -->
         <skillRequirements>
             <Crafting>5</Crafting>
@@ -249,12 +335,12 @@
             </disallowedThingDefs>
         </fixedIngredientFilter>
 
-        <!-- 6. OUTPUT material-->
+        <!-- OUTPUT material-->
         <products>
             <PlasticFiber>45</PlasticFiber>
         </products>
 
-        <!-- 7. Effect AUDIO/VISUAL -->
+        <!-- Effect AUDIO/VISUAL -->
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
     </RecipeDef>

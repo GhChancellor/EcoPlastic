@@ -1,262 +1,371 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Defs>
-    
-    <!-- PlasticBasic Lightweight bio-plastic made from plant materials. 
-    Suitle for constructions of furniture and structures but of inferior quality -->
-    <ThingDef ParentName="ResourceBase">
-    <!-- CORE IDENTITY -->
-    <defName>PlasticBasic</defName>
-    <label>PlasticBasic.label</label>
-    <description>PlasticBasic.description</description>
-
-    <!-- VISUAL REPRESENTATION -->
-    <graphicData>
-        <texPath>Things/Item/Resource/StoneBlocks</texPath>
-        <graphicClass>Graphic_StackCount</graphicClass>
-        <color>(240,248,240)</color>  
-    </graphicData>
-
-        <!-- RAW MATERIAL STATS -->
-        <statBases>
-            <!-- Economic values -->
-            <MarketValue>1.2</MarketValue>           <!-- Affordable for everyone -->
-            <Mass>0.2</Mass>                         <!-- Very lightweight -->
-
-            <!-- Armor effectiveness when used as stuff -->
-            <StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>   <!-- Similar to wood -->
-            <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>   <!-- Basic protection -->
-            <StuffPower_Armor_Heat>0.25</StuffPower_Armor_Heat>     <!-- Plastic melts -->
-            
-            <!-- Insulation effectiveness when used as stuff -->
-            <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold> <!-- Basic insulation -->
-            <StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat> <!-- Basic insulation -->
-
-            <!-- Damage multipliers for weapons made from this -->
-            <SharpDamageMultiplier>0.15</SharpDamageMultiplier>       <!-- Fragile tools -->
-            <BluntDamageMultiplier>0.3</BluntDamageMultiplier>        <!-- Flexible -->
-
-            <!-- Material properties -->
-            <MaxHitPoints>130</MaxHitPoints>                           <!-- Similar to wood -->
-            <MarketValue>1.0</MarketValue>                             <!-- Cheaper than wood -->
-            <Mass>0.35</Mass>                                         <!-- Denser than wood -->
-            <Flammability>1.1</Flammability>                          <!-- Burns faster than wood -->
-            <DeteriorationRate>3.5</DeteriorationRate>                <!-- More durable -->
-        </statBases>
-
-        <burnableByRecipe>true</burnableByRecipe>                  <!-- Can be used as fuel -->
-        <healthAffectsPrice>false</healthAffectsPrice>              <!-- No effect on price if damaged  -->
-        <minRewardCount>30</minRewardCount>                       <!-- Quest rewards -->
-
-        <stuffProps>
-            <statFactors>
-                <Flammability>1.1</Flammability>                      <!-- Multified by fire ( Flammability * Flammability ) -->
-                <Beauty>0.8</Beauty>                                   <!-- Less attractive than natural fiber -->
-                <MaxHitPoints>1.2</MaxHitPoints>                       <!-- Durable synthetic -->
-            </statFactors>
-            <!-- Material categories this can be used for -->
-            <categories>
-                <li>Woody</li>                                          <!-- Furniture material -->
-            </categories>
-
-            <color>240,248,240</color>                             <!-- Color of the material -->
-            <commonality>1.4</commonality>                             <!-- Spawn probability, Cloth 1.4 -->
-            <allowColorGenerators>true</allowColorGenerators>
-            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
-        </stuffProps>
-
-        <!-- Inventory category -->
-        <thingCategories>
-            <li>ResourcesRaw</li>
-        </thingCategories>
-        
-        <comps>
-            <li>
-                <!-- CompColorable - Enables in-game dyeing system-->
-                <compClass>CompColorable</compClass>
-            </li>
-        </comps>
-
-        <colorGeneratorInTraderStock Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>5</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.9,0.9,0.9,1)</max>
-                </li>
-                <li>
-                    <weight>5</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGeneratorInTraderStock>
-        <allowedArchonexusCount>80</allowedArchonexusCount>
-        
-    </ThingDef>
-w
-    <!-- PlasticIndustrial, 
-        Durable bio-plastic for construction. Suitable for constructions of furniture and structures but of superior 
-        quality. -->
-    
-    <ThingDef ParentName="ResourceBase">
+    <!-- PlasticBasic -->
+    <ThingDef ParentName="ResourceVerbBase">
         <!-- CORE IDENTITY -->
-        <defName>PlasticIndustrial</defName>
-        <label>PlasticIndustrial.label</label>
-        <description>PlasticIndustrial.description</description>
+        <defName>PlasticBasic</defName>
+        <label>PlasticBasic.label</label>
+        <description>PlasticBasic.description</description>
 
         <!-- VISUAL REPRESENTATION -->
         <graphicData>
             <texPath>Things/Item/Resource/StoneBlocks</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
-            <color>(85,95,105)</color> 
+            <color>(240,248,240)</color>
+        </graphicData>
+        
+        <equippedAngleOffset>-20</equippedAngleOffset> 
+        
+        <!-- PHYSICAL PROPERTIES -->
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+        
+        <!-- STATISTICS -->
+        <statBases>
+            <!-- Economic: Slightly cheaper than wood (1.2 vs 1.02) -->
+            <MarketValue>1.02</MarketValue>
+
+            <!-- Durability: Reduced hitpoints, bioplastic is less sturdy -->
+            <MaxHitPoints>127</MaxHitPoints>
+
+            <!-- Weight: Lighter than wood, easier transport -->
+            <Mass>0.3</Mass>
+
+            <!-- Fire: Slightly less flammable than wood -->
+            <Flammability>0.9</Flammability>
+
+            <!-- Weather: Better resistance to deterioration -->
+            <DeteriorationRate>0.4</DeteriorationRate>
+
+            <!-- Combat: Poor armor values - not suitable for military gear -->
+            <StuffPower_Armor_Sharp>0.25</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.25</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.20</StuffPower_Armor_Heat>
+
+            <!-- Insulation: Same as wood - could be improved for extreme biomes -->
+            <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+
+            <!-- Weapon damage: Very poor for combat applications -->
+            <SharpDamageMultiplier>0.20</SharpDamageMultiplier>
+            <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+        </statBases>
+        
+        <burnableByRecipe>true</burnableByRecipe> <!-- Can be used as fuel -->
+        <healthAffectsPrice>false</healthAffectsPrice> <!-- No effect on price if damaged -->
+        <minRewardCount>10</minRewardCount> <!-- Quest rewards -->
+        
+        <stuffProps>
+            <!-- Material appearance and naming -->
+<!--            <stuffAdjective>bioplastic</stuffAdjective>-->
+            <!-- Material categories this can be used for -->
+            <categories>
+                <li>Woody</li> <!-- Furniture material -->
+            </categories>
+            <commonality>0.85</commonality> <!-- Spawn probability (wood 1.0)-->
+            <color>(240,248,240)</color>
+
+            <!-- Audio/Visual effects - using wood equivalents (closest vanilla match) -->
+            <constructEffect>ConstructWood</constructEffect>
+            <appearance>Planks</appearance> <!-- Maintains plank appearance like wood -->
+            
+            <!-- Sound effects for interactions -->
+            <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>  <!-- Bullet impact sound -->
+            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>    <!-- Sharp weapon hit sound -->
+            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>    <!-- Blunt weapon hit sound -->
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>  <!-- Melee impact sound -->
+            
+            <statFactors>
+                <MaxHitPoints>0.65</MaxHitPoints>
+                <Beauty>0.8</Beauty> <!-- Less attractive than natural materials -->
+                <Flammability>0.95</Flammability> <!-- Multiplied by fire (Flammability * Flammability) -->
+                <WorkToMake>0.7</WorkToMake> <!-- How to craft items ( dresses, weapons.... ) from this material -->
+                <WorkToBuild>0.7</WorkToBuild> <!-- How to build structures ( wall, door ) from this material -->
+                <DoorOpenSpeed>1.2</DoorOpenSpeed>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
+        
+        <!-- Inventory category -->
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        
+        <techHediffsTags>
+            <li>Poor</li> <!-- quality of prosthesis -->
+        </techHediffsTags>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleeBlunt</li>
+            <li>Neolithic</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>log</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2.5</cooldownTime>
+            </li>
+        </tools>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+    <!-- PlasticIndustrial -->
+    <ThingDef ParentName="ResourceVerbBase">
+        <!-- CORE IDENTITY -->
+        <defName>PlasticIndustrial</defName>
+        <label>PlasticIndustrial.label</label>
+        <description>PlasticIndustrial.description</description>
+        
+        <!-- VISUAL REPRESENTATION -->
+        <graphicData>
+            <texPath>Things/Item/Resource/StoneBlocks</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(85,95,105)</color>
         </graphicData>
 
+        <equippedAngleOffset>-20</equippedAngleOffset>
+
+        <!-- PHYSICAL PROPERTIES -->
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+
+        <!-- STATISTICS -->
+        <statBases>
+            <!-- Economic: Slightly cheaper than wood (1.2 vs 1.02) -->
+            <MarketValue>1.07</MarketValue>
+
+            <!-- Durability: Reduced hitpoints, bioplastic is less sturdy -->
+            <MaxHitPoints>168</MaxHitPoints>
+
+            <!-- Weight: Lighter than wood, easier transport -->
+            <Mass>0.5</Mass>
+
+            <!-- Fire: Slightly less flammable than wood -->
+            <Flammability>0.8</Flammability>
+
+            <!-- Weather: Better resistance to deterioration -->
+            <DeteriorationRate>0.3</DeteriorationRate>
+
+            <!-- Combat: Poor armor values - not suitable for military gear -->
+            <StuffPower_Armor_Sharp>0.65</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.65</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.55</StuffPower_Armor_Heat>
+
+            <!-- Insulation: Same as wood - could be improved for extreme biomes -->
+            <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+
+            <!-- Weapon damage: Very poor for combat applications -->
+            <SharpDamageMultiplier>0.50</SharpDamageMultiplier>
+            <BluntDamageMultiplier>0.11</BluntDamageMultiplier>
+        </statBases>
+
+        <burnableByRecipe>true</burnableByRecipe> <!-- Can be used as fuel -->
+        <healthAffectsPrice>false</healthAffectsPrice> <!-- No effect on price if damaged -->
+        <minRewardCount>10</minRewardCount> <!-- Quest rewards -->
+
+        <stuffProps>
+            <!-- Material appearance and naming -->
+<!--            <stuffAdjective>bioplastic</stuffAdjective>-->
+            <!-- Material categories this can be used for -->
+            <categories>
+                <li>Woody</li> <!-- Furniture material -->
+            </categories>
+            <commonality>0.85</commonality> <!-- Spawn probability (wood 1.0)-->
+            <color>(240,248,240)</color>
+
+            <!-- Audio/Visual effects - using wood equivalents (closest vanilla match) -->
+            <constructEffect>ConstructWood</constructEffect>
+            <!--            <appearance>Planks</appearance> &lt;!&ndash; Maintains plank appearance like wood &ndash;&gt;-->
+
+            <!-- Sound effects for interactions -->
+            <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>  <!-- Bullet impact sound -->
+            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>    <!-- Sharp weapon hit sound -->
+            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>    <!-- Blunt weapon hit sound -->
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>  <!-- Melee impact sound -->
+
+            <statFactors>
+                <MaxHitPoints>0.65</MaxHitPoints>
+                <Beauty>1.2</Beauty> <!-- Less attractive than natural materials -->
+                <Flammability>0.95</Flammability> <!-- Multiplied by fire (Flammability * Flammability) -->
+                <WorkToMake>0.7</WorkToMake> <!-- How to craft items ( dresses, weapons.... ) from this material -->
+                <WorkToBuild>0.7</WorkToBuild> <!-- How to build structures ( wall, door ) from this material -->
+                <DoorOpenSpeed>1.2</DoorOpenSpeed>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
+
+        <!-- Inventory category -->
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+
+        <techHediffsTags>
+            <li>Poor</li> <!-- quality of prosthesis -->
+        </techHediffsTags>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleeBlunt</li>
+            <li>Neolithic</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>log</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2.5</cooldownTime>
+            </li>
+        </tools>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+    
+    <!-- Plastic Bio Steel  -->
+    <ThingDef ParentName="ResourceBase">
+        <!-- CORE IDENTITY -->
+        <defName>PlasticBioSteel</defName>
+        <label>PlasticBioSteel.label</label>
+        <description>PlasticBioSteel.description</description>
+
+        <!-- VISUAL REPRESENTATION -->
+        <graphicData>
+            <texPath>Things/Item/Resource/Plasteel</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+
+        <!-- SOUND EFFECTS -->
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>                 <!-- No effect on price if damaged -->
+        
         <!-- RAW MATERIAL STATS -->
         <statBases>
             <!-- Economic values -->
-            <MarketValue>1.2</MarketValue>           <!-- Affordable for everyone -->
-            <Mass>0.2</Mass>                         <!-- Very lightweight -->
+            <MarketValue>5.5</MarketValue>                             <!-- Industrial grade, more expensive than wood -->
+            <Mass>0.28</Mass>                                          <!-- Denser than PlasticBasic -->
 
             <!-- Armor effectiveness when used as stuff -->
-            <StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>   <!-- Similar to wood -->
-            <StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>   <!-- Basic protection -->
-            <StuffPower_Armor_Heat>0.35</StuffPower_Armor_Heat>     <!-- Plastic melts -->
+            <StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>     <!-- Better protection than basic -->
+            <StuffPower_Armor_Blunt>0.46</StuffPower_Armor_Blunt>     <!-- Enhanced blunt protection -->
+            <StuffPower_Armor_Heat>0.55</StuffPower_Armor_Heat>       <!-- Still melts under heat -->
 
             <!-- Insulation effectiveness when used as stuff -->
-            <StuffPower_Insulation_Cold>15</StuffPower_Insulation_Cold> <!-- Basic insulation -->
-            <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat> <!-- Basic insulation -->
+            <StuffPower_Insulation_Cold>2.4</StuffPower_Insulation_Cold> <!-- Better cold insulation -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- Better heat insulation -->
 
-            <!-- Damage multipliers for weapons made from this -->
-            <SharpDamageMultiplier>0.30</SharpDamageMultiplier>       <!-- Fragile tools -->
-            <BluntDamageMultiplier>0.8</BluntDamageMultiplier>        <!-- Flexible -->
-
-            <!-- Material properties -->
-            <MaxHitPoints>140</MaxHitPoints>                           <!-- Similar to wood -->
-            <MarketValue>1.8</MarketValue>                             <!-- Cheaper than wood -->
-            <Mass>0.3</Mass>                                         <!-- Denser than wood -->
-            <Flammability>1</Flammability>                          <!-- Burns faster than wood -->
-            <DeteriorationRate>3.5</DeteriorationRate>                <!-- More durable -->
+            <!-- Damage multipliers for weapons made from this ???? -->
+            <!-- Da rivedere-->
+            <SharpDamageMultiplier>0.93</SharpDamageMultiplier>       <!-- Better than basic but still fragile -->
+            <BluntDamageMultiplier>0.7</BluntDamageMultiplier>        <!-- More rigid than basic -->
         </statBases>
 
-        <burnableByRecipe>true</burnableByRecipe>                  <!-- Can be used as fuel -->
-        <healthAffectsPrice>false</healthAffectsPrice>              <!-- No effect on price if damaged  -->
-        <minRewardCount>30</minRewardCount>                       <!-- Quest rewards -->
+        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
+
+        <!-- Inventory category -->
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+
+        <techHediffsTags>
+            <li>Simple</li> <!-- quality of prosthesis -->
+        </techHediffsTags>
+
+<!--        <deepCommonality>1</deepCommonality>-->
+<!--        <deepCountPerPortion>10</deepCountPerPortion>-->
+<!--        <deepLumpSizeRange>2~10</deepLumpSizeRange>-->
+<!--        <burnableByRecipe>false</burnableByRecipe>-->
+<!--        <smeltable>true</smeltable>-->
 
         <stuffProps>
-            <statFactors>
-                <Flammability>1.1</Flammability>                      <!-- Multified by fire ( Flammability * Flammability ) -->
-                <Beauty>1.4</Beauty>                                   <!-- more beautiful than wood -->
-                <WorkToBuild>1.3</WorkToBuild>                          <!-- More time to build -->
-                <MaxHitPoints>1.2</MaxHitPoints>                       <!-- Durable synthetic -->
-            </statFactors>
-            <!-- Material categories this can be used for -->
             <categories>
-                <li>Metallic</li>                                          <!-- Furniture material -->
+                <!-- Material categories this can be used for -->
+                <li>Metallic</li> <!-- Industrial material strutucture, weapons, etc. -->
             </categories>
-
-            <commonality>1.4</commonality>                             <!-- Spawn probability, Cloth 1.4 -->
-            <allowColorGenerators>true</allowColorGenerators>
-            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+            <appearance>Metal</appearance>
+            <commonality>0.3</commonality>
+            <constructEffect>ConstructMetal</constructEffect>
+            <isAirtight>true</isAirtight>
+            <color>(105,125,135)</color>  
+            
+            <!-- Sound effects -->
+            <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+            
+            <statFactors>
+                <MaxHitPoints>2.2</MaxHitPoints>
+                <Beauty>1.3</Beauty>
+                <Flammability>0.3</Flammability>
+                <WorkToMake>1.4</WorkToMake>
+                <WorkToBuild>1.4</WorkToBuild>
+                <MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier> <!-- ????-->
+            </statFactors>
         </stuffProps>
-        
-        <comps>
-            <li>
-                <!-- CompColorable - Enables in-game dyeing system-->
-                <compClass>CompColorable</compClass>
-            </li>
-        </comps>
 
-        <colorGeneratorInTraderStock Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>5</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.9,0.9,0.9,1)</max>
-                </li>
-                <li>
-                    <weight>5</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGeneratorInTraderStock>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>80</allowedArchonexusCount>
-
+        
     </ThingDef>
     
-    <!-- Plastic fiber material with scientifically coherent values -->
+    <!--Plastic fiber -->
     <ThingDef ParentName="ResourceBase">
-        <!-- CORE IDENTITY -->
         <defName>PlasticFiber</defName>
         <label>PlasticFiber.label</label>
         <description>PlasticFiber.description</description>
-
-        <!-- VISUAL REPRESENTATION -->
+        
         <graphicData>
             <texPath>Things/Item/Resource/Cloth</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <color>(240,248,240)</color>
         </graphicData>
-
-        <!-- RAW MATERIAL STATS -->
+        
         <statBases>
-            <!-- Armor protection - synthetic fibers offer decent cut resistance -->
-            <StuffPower_Armor_Sharp>0.25</StuffPower_Armor_Sharp>     <!-- Better than cloth -->
-            <StuffPower_Armor_Blunt>0.10</StuffPower_Armor_Blunt>     <!-- Basic padding -->
-            <StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>       <!-- Melts easily -->
-
-            <!-- Thermal insulation - plastic fibers excel at trapping air -->
-            <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold> <!-- Good cold protection -->
-            <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat> <!-- Excellent heat retention -->
-
-            <!-- Material properties -->
-            <MaxHitPoints>95</MaxHitPoints>                            <!-- Stronger than cloth -->
-            <MarketValue>1.8</MarketValue>                             <!-- Slightly more expensive -->
-            <Mass>0.022</Mass>                                         <!-- Lighter than cloth -->
-            <Flammability>1.2</Flammability>                          <!-- Burns faster than cloth -->
-            <DeteriorationRate>3.5</DeteriorationRate>                <!-- More durable -->
+            <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.18</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+            <MaxHitPoints>80</MaxHitPoints>
+            <MarketValue>1.5</MarketValue>
+            <Mass>0.026</Mass>
+            <Flammability>1.2</Flammability>
+            <DeteriorationRate>4</DeteriorationRate>
         </statBases>
-
-        <burnableByRecipe>true</burnableByRecipe>                  <!-- Can be used as fuel -->
-        <healthAffectsPrice>false</healthAffectsPrice>              <!-- No effect on price if damaged  -->
-        <minRewardCount>30</minRewardCount>                       <!-- Quest rewards -->
-
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>30</minRewardCount>
         <stuffProps>
             <statFactors>
-                <Flammability>1.2</Flammability>                      <!-- Multified by fire ( Flammability * Flammability ) -->
-                <Beauty>0.8</Beauty>                                   <!-- Less attractive than natural fiber -->
-                <MaxHitPoints>1.2</MaxHitPoints>                       <!-- Durable synthetic -->
+                <Flammability>1.2</Flammability>
+                <Beauty>1</Beauty>
             </statFactors>
-            <!-- Material categories this can be used for -->
             <categories>
                 <li>Fabric</li>
             </categories>
-
-            <commonality>1.4</commonality>                             <!-- Spawn probability, Cloth 1.4 -->
+            <color>(240,248,240)</color>
+            <commonality>1.4</commonality>
             <allowColorGenerators>true</allowColorGenerators>
-            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff> <!-- Allow quest to suggest default stuff for this material -->
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
         </stuffProps>
-
-        <!-- Inventory category -->
         <thingCategories>
             <li>Textiles</li>
         </thingCategories>
-
-        
         <comps>
             <li>
-                <!-- CompColorable - Enables in-game dyeing system-->
                 <compClass>CompColorable</compClass>
             </li>
         </comps>
-
         <colorGeneratorInTraderStock Class="ColorGenerator_Options">
             <options>
                 <li>
@@ -275,6 +384,5 @@ w
             </options>
         </colorGeneratorInTraderStock>
         <allowedArchonexusCount>80</allowedArchonexusCount>
-    </ThingDef>
-
+    </ThingDef>    
 </Defs>

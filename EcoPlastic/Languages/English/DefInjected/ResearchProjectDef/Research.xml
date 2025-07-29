@@ -10,6 +10,10 @@
     <PlasticIndustrialResearch.label>industrial plastic</PlasticIndustrialResearch.label>
     <PlasticIndustrialResearch.description>Advanced bio-plastic with enhanced durability. Industrial-grade material for high-quality furniture and robust structures.</PlasticIndustrialResearch.description>
 
+    <!-- Plastic BioSteel Research -->
+    <PlasticBioSteelResearch.label>plastic Bio-Steel </PlasticBioSteelResearch.label>
+    <PlasticBioSteelResearch.description>Advanced plastic bio-engineered steel created by reinforcing plant-based polymers with metallic compounds. While not as strong as spacer-tech materials, it offers an excellent balance of durability and sustainability for colonial construction.</PlasticBioSteelResearch.description>
+    
     <!-- Plastic Fiber Research -->
     <PlasticFiberResearch.label>plastic fiber</PlasticFiberResearch.label>
     <PlasticFiberResearch.description>Synthetic textile fiber from bio-plastic. Suitable for clothing production and textile crafting.</PlasticFiberResearch.description>

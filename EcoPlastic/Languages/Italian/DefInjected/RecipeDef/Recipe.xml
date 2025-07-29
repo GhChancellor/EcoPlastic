@@ -12,6 +12,11 @@
     <PlasticIndustrialRecipe.description>Bio-plastica resistente per costruzioni. Adatta per la costruzione di mobili e strutture ma di qualità superiore.</PlasticIndustrialRecipe.description>
     <PlasticIndustrialRecipe.jobString>producendo plastica industriale</PlasticIndustrialRecipe.jobString>
 
+    <!-- Plastic BioSteel  -->
+    <PlasticBioSteelRecipe.label>acciaio Bio-Plastico</PlasticBioSteelRecipe.label>
+    <PlasticBioSteelRecipe.description>Acciaio bio-ingegnerizzato plastico avanzato creato rinforzando polimeri di origine vegetale con composti metallici. Pur non essendo resistente quanto i materiali spaziali, offre un eccellente equilibrio tra durabilità e sostenibilità per le costruzioni coloniali.</PlasticBioSteelRecipe.description>
+    <PlasticBioSteelRecipe.jobString>producendo acciaio Bio-Plastico</PlasticBioSteelRecipe.jobString>
+    
     <!-- PlasticFiberRecipe -->
     <PlasticFiberRecipe.label>produci fibra plastica</PlasticFiberRecipe.label>
     <PlasticFiberRecipe.description>Tessuto sintetico ricavato da bio-plastica. Adatto per la produzione di vestiti base e commercio.</PlasticFiberRecipe.description>
