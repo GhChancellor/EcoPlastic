@@ -2,24 +2,54 @@
 
 **EcoPlastic** transforms RimWorld with sustainable materials for your colony!
 
+RECENT UPDATES:
+0.0.0.56 
+  - " Recycle " corpses of humans or animals into chemfuel!
+  - Convert hay to chemfuel
+  - Traders bring raw resources: Plastic Basic, Plastic Industrial, Plastic Bio-Steel, Plastic Fiber, and Wood Planks
+  - Fix icon's color
+
+0.0.0.52 
+  - Plastic Bio-Steel (Fabrication bench) now available! Advanced bio-engineered steel alternative
+
+
 ## 🌨️ **Designed for Extreme Climates**
 Specifically designed for hostile biomes where wood is rare or nonexistent: arid deserts, frozen tundras, and Antarctic wastelands. Survive and thrive even in the harshest environments!
 
 ## 🌱 **Ecological Production**
 Create bio-plastic at the biofuel refinery from common plant resources: agave, berries, corn, potatoes, and rice. Even greenhouse-grown crops work! No more dependence on traders for advanced materials!
 
-## 🔧 **Three Specialized Materials**
+## 🔧 **Four Specialized Materials**
 
-**Plastic Basic** - Entry-level material for basic furniture, structures, and recreation. Cheap and fast to produce.
+**Plastic Basic** :
+Entry-level material for basic furniture, structures, and recreation. Cheap and fast to produce.
 
-**Plastic Industrial** - Advanced version for high-quality construction. Greater durability and beauty for your premium structures.
+**Plastic Industrial** :
+Advanced version for high-quality construction. Greater durability and beauty for your premium structures.
 
-**Plastic Fiber** - Synthetic textile for clothing. Sustainable alternative to cotton for dressing your colony.
+**Plastic Bio-Steel** :
+Advanced plastic bio-engineered steel created by reinforcing plant-based polymers with metallic compounds (Fabrication bench)
 
-## ⚡ **Energy Bonus**
-Recycle all plastics into chemfuel! Transform waste into energy for your generators.
+**Plastic Fiber** :
+Synthetic textile for clothing. Sustainable alternative to cotton for dressing your colony.
+
+## ⚡ **Recipe for Biofuel Refinery**
+- Recycle all plastics into chemfuel! Transform waste into energy for your generators.
+- " Recycle " corpses of humans or animals into chemfuel!
+- Convert hay to chemfuel
+
+## Traders ##
+Now traders bring raw resources: Plastic Basic, Plastic Industrial, Plastic Bio-Steel, Plastic Fiber, and Wood Planks
 
 ## 🎯 **Vanilla Friendly**
 Perfect integration with the base game. Balanced for equilibrium gameplay without disrupting the RimWorld experience.
 
 **Start your colony's green revolution today!**
+
+Inspired by Plastic Revolution by Orbittwz.
+https://github.com/orbittwz/PlasticRevolution
+
+Completely rewritten implementation.
+Licensed under MIT License.
+Copyright (c) 2025 Emanuele Martinelli
+https://github.com/GhChancellor/EcoPlastic

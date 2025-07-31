@@ -4,6 +4,7 @@
 
     <!--  ================= Chem fuel From Plastic Recipe  ================= -->
     <RecipeDef>
+        <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
         <!-- ID -->
         <defName>ChemfuelFromPlasticRecipe</defName>
         <label>ChemfuelFromPlasticRecipe.label</label>
@@ -57,9 +58,9 @@
         <soundWorking>Recipe_Cremate</soundWorking>
     </RecipeDef>
     
-
     <!--  ================= Plastic Basic Recipe  ================= -->
     <RecipeDef>
+        <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
         <!-- ID -->
         <defName>PlasticBasicRecipe</defName>
         <label>PlasticBasicRecipe.label</label>
@@ -126,10 +127,10 @@
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
     </RecipeDef>
-
-
-    ================= Plastic Industrial Recipe =================
+    
+    <!-- ================= Plastic Industrial Recipe =================-->
     <RecipeDef>
+        <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
         <!-- ID -->
         <defName>PlasticIndustrialRecipe</defName>
         <label>PlasticIndustrialRecipe.label</label>
@@ -203,6 +204,7 @@
 
     <!-- Plastic bioSteel Recipe -->
     <RecipeDef>
+        <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
         <!-- ID -->
         <defName>PlasticBioSteelRecipe</defName>
         <label>PlasticBioSteelRecipe.label</label>
@@ -226,7 +228,7 @@
 
         <!-- Where you craft it  -->
         <recipeUsers>
-            <li>FabricationBench</li>
+            <li>FabricationBench</li> <!-- Fabrication bench -->
         </recipeUsers>
 
         <!-- INGREDIENTS -->
@@ -278,6 +280,7 @@
 
     <!--  ================= Plastic fiber Recipe  ================= -->
     <RecipeDef>
+        <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
         <!-- ID -->
         <defName>PlasticFiberRecipe</defName>
         <label>PlasticFiberRecipe.label</label>
