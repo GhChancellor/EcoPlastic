@@ -4,20 +4,16 @@
     <name>Eco plastic</name>
     <author>Lele</author>
     <packageId>lele.EcoPlastic</packageId>
-    <description># EcoPlastic - English Mod Description
-
-        **EcoPlastic** transforms RimWorld with sustainable materials for your colony!
+    <description>**EcoPlastic** transforms RimWorld with sustainable materials for your colony!
 
         RECENT UPDATES:
+        0.0.0.XX Quality of life ( QoL ) Add light range indicators to all vanilla lamps: Wall Lamp, Flood Light, Standing Lamp, Torch Lamp, and Wall Torch Lamp
+
         0.0.0.56
         - " Recycle " corpses of humans or animals into chemfuel!
         - Convert hay to chemfuel
         - Traders bring raw resources: Plastic Basic, Plastic Industrial, Plastic Bio-Steel, Plastic Fiber, and Wood Planks
         - Fix icon's color
-
-        0.0.0.52
-        - Plastic Bio-Steel (Fabrication bench) now available! Advanced bio-engineered steel alternative
-
 
         ## 🌨️ **Designed for Extreme Climates**
         Specifically designed for hostile biomes where wood is rare or nonexistent: arid deserts, frozen tundras, and Antarctic wastelands. Survive and thrive even in the harshest environments!
@@ -44,12 +40,15 @@
         - " Recycle " corpses of humans or animals into chemfuel!
         - Convert hay to chemfuel
 
-        ## Traders ##
+        ## **Traders** ##
         Now traders bring raw resources: Plastic Basic, Plastic Industrial, Plastic Bio-Steel, Plastic Fiber, and Wood Planks
 
         ## 🎯 **Vanilla Friendly**
         Perfect integration with the base game. Balanced for equilibrium gameplay without disrupting the RimWorld experience.
 
+        ## **Quality of life ( QoL ) **
+        Add light range indicators to all vanilla lamps: Wall Lamp, Flood Light, Standing Lamp, Torch Lamp, and Wall Torch Lamp
+        
         **Start your colony's green revolution today!**
 
         Inspired by Plastic Revolution by Orbittwz.

@@ -30,6 +30,7 @@
                 <filter>
                     <thingDefs>
                         <li>PlasticBasic</li>
+                        <li>PlasticIndustrial</li>
                         <li>PlasticFiber</li>
                     </thingDefs>
                 </filter>
