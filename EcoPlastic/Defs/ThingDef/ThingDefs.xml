@@ -235,7 +235,7 @@
         <allowedArchonexusCount>150</allowedArchonexusCount>
     </ThingDef>
     
-    <!-- Plastic Bio Steel  -->
+    <!-- Plastic Bio Steel ThingCategoryDef TradingGoods2 -->
     <ThingDef ParentName="ResourceBase">
         <!--ThingDefs_Items/Items_Resource_Stuff.xml > Plasteel-->
         <!-- CORE IDENTITY -->
@@ -431,7 +431,7 @@
         <healthAffectsPrice>false</healthAffectsPrice>
         <minRewardCount>10</minRewardCount>
         <stuffProps>
-            <stuffAdjective>wooden</stuffAdjective>
+            <!-- <stuffAdjective>wooden</stuffAdjective>-->
             <categories>
                 <li>Woody</li>
             </categories>

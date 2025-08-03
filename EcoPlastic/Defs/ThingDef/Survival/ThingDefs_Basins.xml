@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ThingDef Name="TemplateBasin" ParentName="BuildingBase" Abstract="true" >
+        <label>Template</label>
+        <description>A simple Template.</description>
+        <noRightClickDraftAttack>true</noRightClickDraftAttack>
+        <thingClass>Building_PlantGrower</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <color>(150, 111, 51)</color>
+            <drawSize>(1,4)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <castEdgeShadows>true</castEdgeShadows>
+        <altitudeLayer>LowPlant</altitudeLayer>
+        <defaultPlacingRot>East</defaultPlacingRot>
+        <passability>PassThroughOnly</passability>
+        <pathCost>30</pathCost>
+
+        <fillPercent>0.30</fillPercent>
+        <canOverlapZones>false</canOverlapZones>
+        
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+               
+        <statBases>
+            <WorkToBuild>1500</WorkToBuild>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+            <Cleanliness>-3</Cleanliness>
+            <Mass>5</Mass> <!-- it's necessary for MinifiedThing--> 
+        </statBases>
+        <size>(1,4)</size>
+
+        <fertility>1.2</fertility>
+        <building>
+            <defaultPlantToGrow>Plant_Haygrass</defaultPlantToGrow>
+            <sowTag>CustomSowTagPlants</sowTag>
+            <buildingTags>
+                <li>Production</li> <!-- Menù production -->
+            </buildingTags>
+        </building>
+        <tickerType>Rare</tickerType>
+
+        <stuffCategories>
+            <li>Woody</li> <!-- materials used to build this item -->
+        </stuffCategories>
+
+        <costStuffCount>50</costStuffCount>
+
+        <costList>
+            <Steel>3</Steel>
+        </costList>
+
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        
+        <!--Which menu appear Production/Furniture/Recreation/Security -->
+        <designationCategory>Production</designationCategory>
+
+        <neverMultiSelect>false</neverMultiSelect>
+
+        <!-- ********** MinifiedThing ************** -->
+
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <overrideMinifiedRot>North</overrideMinifiedRot>
+        <minifiedDrawOffset>(0, 0, 0.2)</minifiedDrawOffset>
+
+        <thingCategories>
+            <li>BuildingsFurniture</li> <!-- it's necessary for MinifiedThing -->
+        </thingCategories>
+        
+    <!-- ************************************* -->
+    </ThingDef>
+
+    <!-- Soil Basin -->
+    <ThingDef ParentName="TemplateBasin">
+        <defName>SoilBasin</defName>
+        <label>soil basin</label>
+        <description>A simple wooden planter for growing crops indoors without electricity.</description>
+    </ThingDef>
+
+    <!-- Tree Basin -->
+    <ThingDef ParentName="TemplateBasin">
+        <defName>TreeBasin</defName>
+        <label>Tree basin</label>
+        <description>A simple wooden planter for growing tree without electricity.</description>
+        <graphicData>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToBuild>800</WorkToBuild>
+        </statBases>
+
+        <size>(1,1)</size>
+        <fertility>0.8</fertility>
+        
+        <building>
+            <defaultPlantToGrow>Plant_TreePoplar</defaultPlantToGrow>
+            <sowTag>CustomSowTagTree</sowTag>
+        </building>
+
+        <costStuffCount>25</costStuffCount>
+
+        <costList>
+            <Steel>1</Steel>
+        </costList>
+    </ThingDef>
+    
+</Defs>

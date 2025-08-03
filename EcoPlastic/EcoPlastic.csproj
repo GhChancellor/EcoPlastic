@@ -38,8 +38,7 @@
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
         <PropertyGroup>
             <ProjectName>EcoPlastic</ProjectName>
-            <ModRootFolder>/home/$(USER)/Documenti/Archivio/Store/Steam/steamapps/common/RimWorld/Mods/$(ProjectName)
-            </ModRootFolder>
+            <ModRootFolder>/home/$(USER)/Documenti/Archivio/Store/Steam/steamapps/common/RimWorld/Mods/$(ProjectName)</ModRootFolder>
             <ModAssembliesFolder>$(ModRootFolder)/Assemblies</ModAssembliesFolder>
             <ModName>$(ProjectName).dll</ModName>
         </PropertyGroup>

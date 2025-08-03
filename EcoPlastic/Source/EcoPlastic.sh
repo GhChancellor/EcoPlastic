@@ -3,7 +3,7 @@
 echo
 MODNAME="EcoPlastic"
 
-PROJECTPATH="/home/lele/Documenti/Archivio/Programmazione/Modding/RimWorld/${MODNAME}/${MODNAME}/"
+PROJECTPATH="/home/${USER}/Documenti/Archivio/Programmazione/Modding/RimWorld/${MODNAME}/${MODNAME}/"
 
 CSPROJFILE="${PROJECTPATH}${MODNAME}.csproj"
 STEAMID="294100"
