@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    
+    <!-- BurnedIncendiaryPlasticTile -->
+    <BurnedIncendiaryPlasticTile.label>burned incendiary plastic tile.</BurnedIncendiaryPlasticTile.label>
+    <BurnedIncendiaryPlasticTile.description>Incendiary plastic tile that has been burned in a fire.</BurnedIncendiaryPlasticTile.description>
+    
+    <!-- IncendiaryPlasticTile -->
+    <IncendiaryPlasticTile.label>Incendiary plastic tile</IncendiaryPlasticTile.label>
+    <IncendiaryPlasticTile.description>Extremely flammable for tactical applications. Handle with care.</IncendiaryPlasticTile.description>
+
+</LanguageData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+    <!-- BurnedIncendiaryPlasticTile -->
+    <BurnedIncendiaryPlasticTile.label>piastrella di plastica incendiaria bruciata.</BurnedIncendiaryPlasticTile.label>
+    <BurnedIncendiaryPlasticTile.description>Piastrella di plastica incendiaria bruciata durante un incendio.</BurnedIncendiaryPlasticTile.description>
+
+    <!-- IncendiaryPlasticTile -->
+    <IncendiaryPlasticTile.label>piastrella di plastica incendiaria</IncendiaryPlasticTile.label>
+    <IncendiaryPlasticTile.description>Estremamente infiammabile per applicazioni tattiche. Maneggiare con cautela</IncendiaryPlasticTile.description>
+
+    
+</LanguageData>
