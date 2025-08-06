@@ -14,7 +14,8 @@
         <jobString>ChemfuelFromPlasticRecipe.jobString</jobString>
         <workAmount>2000</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-
+        <researchPrerequisite>PlasticBasicResearch</researchPrerequisite>
+        
         <!-- Preserves work progress if interrupted -->
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <displayPriority>0</displayPriority> <!-- priority work-->
@@ -32,6 +33,7 @@
                         <li>PlasticBasic</li>
                         <li>PlasticIndustrial</li>
                         <li>PlasticFiber</li>
+                        <li>IncendiaryPlastic</li>
                     </thingDefs>
                 </filter>
                 <count>50</count>
@@ -47,11 +49,12 @@
                 <li>PlasticBasic</li>
                 <li>PlasticIndustrial</li>
                 <li>PlasticFiber</li>
+                <li>IncendiaryPlastic</li>
             </thingDefs>
         </fixedIngredientFilter>
 
         <products>
-            <Chemfuel>45</Chemfuel>
+            <Chemfuel>40</Chemfuel>
         </products>
 
         <!-- Effect Working & sound -->
@@ -79,6 +82,10 @@
             <Crafting>5</Crafting>
         </skillRequirements>
 
+        <!-- Preserves work progress if interrupted -->
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+<!--        <displayPriority>0</displayPriority> &lt;!&ndash; priority work&ndash;&gt;-->
+        
         <!-- Where you craft it  -->
         <recipeUsers>
             <li>BiofuelRefinery</li>
@@ -151,7 +158,7 @@
 
         <!-- Preserves work progress if interrupted -->
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <displayPriority>0</displayPriority> <!-- priority work-->
+<!--        <displayPriority>0</displayPriority> &lt;!&ndash; priority work&ndash;&gt;-->
 
         <!-- Where you craft it  -->
         <recipeUsers>
@@ -225,7 +232,7 @@
 
         <!-- Preserves work progress if interrupted -->
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <displayPriority>0</displayPriority> <!-- priority work-->
+<!--        <displayPriority>0</displayPriority> &lt;!&ndash; priority work&ndash;&gt;-->
 
         <!-- Where you craft it  -->
         <recipeUsers>
@@ -294,6 +301,11 @@
         <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>PlasticFiberResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_PlasticBasic.png -->
 
+        <!-- Preserves work progress if interrupted -->
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <!--        <displayPriority>0</displayPriority> &lt;!&ndash; priority work&ndash;&gt;-->
+
+
         <!-- Requirements -->
         <skillRequirements>
             <Crafting>5</Crafting>
@@ -349,4 +361,83 @@
         <soundWorking>Recipe_Cremate</soundWorking>
     </RecipeDef>
 
+    <!--  ================= Incendiary Plastic Recipe  ================= -->
+    <RecipeDef>
+        <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
+        <!-- ID -->
+        <defName>IncendiaryPlasticRecipe</defName>
+        <label>IncendiaryPlasticRecipe.label</label>
+        <description>IncendiaryPlasticRecipe.description</description>
+
+        <!-- Mechanic CORE -->
+        <jobString>IncendiaryPlasticRecipe.jobString</jobString>
+        <workAmount>800</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
+        <researchPrerequisite>IncendiaryPlasticResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_PlasticBasic.png -->
+
+        <!-- Preserves work progress if interrupted -->
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <!--        <displayPriority>0</displayPriority> &lt;!&ndash; priority work&ndash;&gt;-->
+
+
+        <!-- Requirements -->
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+
+        <!-- Where you craft it  -->
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+
+        <!-- INGREDIENTS -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PlasticBasic</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+        </ingredients>
+
+        <!-- Allow mixing different plant ingredients in same recipe -->
+        <allowMixingIngredients>true</allowMixingIngredients>
+
+        <!-- Default UI filter - enables PlantFoodRaw by default -->
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Chemfuel</li>
+                <li>PlasticBasic</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+
+        <!-- default ingredient Chemfuel  and PlasticBasic  -->
+        <defaultIngredientFilter>
+            <thingDefs>
+                <li>Chemfuel</li>
+                <li>PlasticBasic</li>
+            </thingDefs>
+        </defaultIngredientFilter>
+
+        <!-- OUTPUT material-->
+        <products>
+            <IncendiaryPlastic>25</IncendiaryPlastic>
+        </products>
+
+        <!-- Effect AUDIO/VISUAL -->
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+    </RecipeDef>
+    
 </Defs>

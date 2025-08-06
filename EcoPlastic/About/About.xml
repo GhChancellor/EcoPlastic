@@ -4,67 +4,71 @@
     <name>Eco plastic</name>
     <author>Lele</author>
     <packageId>lele.EcoPlastic</packageId>
-    <description>**EcoPlastic** transforms RimWorld with sustainable materials for your colony!
+    <description>**EcoPlastic Survival Frontier** transforms RimWorld with sustainable materials for your colony!
 
-        RECENT UPDATES:
-        0.0.0.62 Added Soil Basin and Tree Basin inspired by Hydroponic Basin
-        *Soil Basin*:
-        - 120% efficiency, no power required. Crop types: Corn, Cotton, Dandelion, Daylily, Devilstrand, Haygrass, Hops, Healroot, Potato, Psychoid, Rice, Rose, Smokeleaf, Strawberry, Tinctoria
-        *Tree Basin*:
-        - 80% efficiency, no power required. Crop types: Oak Tree, Cocoa Tree, Poplar Tree
+RECENT UPDATES:
+0.0.0.64 Incendiary Plastic: Bio-plastic infused with volatile compounds. Extremely flammable construction material for tactical applications. Handle with care.        
         
-        0.0.0.59 Quality of life ( QoL ) Add light range indicators to all vanilla lamps: Wall Lamp, Flood Light, Standing Lamp, Torch Lamp, and Wall Torch Lamp
+0.0.0.62 Added Soil Basin and Tree Basin inspired by Hydroponic Basin
+*Soil Basin*:
+- 120% efficiency, no power required. Crop types: Corn, Cotton, Dandelion, Daylily, Devilstrand, Haygrass, Hops, Healroot, Potato, Psychoid, Rice, Rose, Smokeleaf, Strawberry, Tinctoria
+*Tree Basin*:
+- 80% efficiency, no power required. Crop types: Oak Tree, Cocoa Tree, Poplar Tree
+Add Wall sun Lamp
 
-        ## 🌨️ **Designed for Extreme Climates**
-        Specifically designed for hostile biomes where wood, food are rares or nonexistent: arid deserts, frozen tundras, and Antarctic wastelands. Survive and thrive even in the harshest environments!
+## 🌨️ **Designed for Extreme Climates**
+Specifically designed for hostile biomes where wood, food are rares or nonexistent: arid deserts, frozen tundras, and Antarctic wastelands. Survive and thrive even in the harshest environments!
 
-        ## 🌱 **Ecological Production**
-        Create bio-plastic at the biofuel refinery from common plant resources: agave, berries, corn, potatoes, and rice. Even greenhouse-grown crops work! No more dependence on traders for advanced materials!
+## 🌱 **Ecological Production**
+Create bio-plastic at the biofuel refinery from common plant resources: agave, berries, corn, potatoes, and rice. Even greenhouse-grown crops work! No more dependence on traders for advanced materials!
 
-        ## 🔧 **Four Specialized Materials**
+## 🔧 **Five Specialized Materials**
 
-        **Plastic Basic** :
-        Entry-level material for basic furniture, structures, and recreation. Cheap and fast to produce.
+**Plastic Basic** :
+Entry-level material for basic furniture, structures, and recreation. Cheap and fast to produce.
 
-        **Plastic Industrial** :
-        Advanced version for high-quality construction. Greater durability and beauty for your premium structures.
+**Plastic Industrial** :
+Advanced version for high-quality construction. Greater durability and beauty for your premium structures.
 
-        **Plastic Bio-Steel** :
-        Advanced plastic bio-engineered steel created by reinforcing plant-based polymers with metallic compounds (Fabrication bench)
+**Plastic Bio-Steel** :
+Advanced plastic bio-engineered steel created by reinforcing plant-based polymers with metallic compounds (Fabrication bench)
 
-        **Plastic Fiber** :
-        Synthetic textile for clothing. Sustainable alternative to cotton for dressing your colony.
+**Plastic Fiber** :
+Synthetic textile for clothing. Sustainable alternative to cotton for dressing your colony.
 
-        ## ⚡ **Recipe for Biofuel Refinery**
-        - Recycle all plastics into chemfuel! Transform waste into energy for your generators.
-        - " Recycle " corpses of humans or animals into chemfuel!
-        - Convert hay to chemfuel
-
-        ## **Traders** ##
-        Now traders bring raw resources: Plastic Basic, Plastic Industrial, Plastic Bio-Steel, Plastic Fiber, and Wood Planks
-
-        ## 🎯 **Vanilla Friendly**
-        Perfect integration with the base game. Balanced for equilibrium gameplay without disrupting the RimWorld experience.
+**Incendiary Plastic**
+Bio-plastic infused with volatile compounds. Extremely flammable construction material for tactical applications. Handle with care.        
         
-        ## ** Indoor crops **
-        Added Soil Basin and Tree Basin inspired by Hydroponic Basin
-        *Soil Basin*:
-        - 120% efficiency, no power required. Crop types: Corn, Cotton, Dandelion, Daylily, Devilstrand, Haygrass, Hops, Healroot, Potato, Psychoid, Rice, Rose, Smokeleaf, Strawberry, Tinctoria
-        *Tree Basin*:
-        - 80% efficiency, no power required. Crop types: Oak Tree, Cocoa Tree, Poplar Tree
+## ⚡ **Recipe for Biofuel Refinery**
+- Recycle all plastics into chemfuel! Transform waste into energy for your generators.
+- " Recycle " corpses of humans or animals into chemfuel!
+- Convert hay to chemfuel
 
-        ## **Quality of life ( QoL ) **
-        Add light range indicators to all vanilla lamps: Wall Lamp, Flood Light, Standing Lamp, Torch Lamp, and Wall Torch Lamp
-        **Start your colony's green revolution today!**
+## **Traders**
+Now traders bring raw resources: Plastic Basic, Plastic Industrial, Plastic Bio-Steel, Plastic Fiber, and Wood Planks
 
-        Inspired by Plastic Revolution by Orbittwz.
-        https://github.com/orbittwz/PlasticRevolution
+## 🎯 **Vanilla Friendly**
+Perfect integration with the base game. Balanced for equilibrium gameplay without disrupting the RimWorld experience.
 
-        Completely rewritten implementation.
-        Licensed under MIT License.
-        Copyright (c) 2025 Emanuele Martinelli
-        https://github.com/GhChancellor/EcoPlastic
-    </description>
+## ** Indoor crops **
+Added Soil Basin and Tree Basin inspired by Hydroponic Basin
+*Soil Basin*:
+- 120% efficiency, no power required. Crop types: Corn, Cotton, Dandelion, Daylily, Devilstrand, Haygrass, Hops, Healroot, Potato, Psychoid, Rice, Rose, Smokeleaf, Strawberry, Tinctoria
+*Tree Basin*:
+- 80% efficiency, no power required. Crop types: Oak Tree, Cocoa Tree, Poplar Tree
+Add Wall sun Lamp
+
+## **Quality of life ( QoL ) **
+Add light range indicators to all vanilla lamps: Wall Lamp, Flood Light, Standing Lamp, Torch Lamp, and Wall Torch Lamp
+**Start your colony's green revolution today!**
+
+Inspired by Plastic Revolution by Orbittwz.
+https://github.com/orbittwz/PlasticRevolution
+
+Completely rewritten implementation.
+Licensed under MIT License.
+Copyright (c) 2025 Emanuele Martinelli
+https://github.com/GhChancellor/EcoPlastic</description>
     
     <supportedVersions>
         <li>1.6</li>

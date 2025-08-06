@@ -18,4 +18,8 @@
     <PlasticFiberResearch.label>fibra di plastica</PlasticFiberResearch.label>
     <PlasticFiberResearch.description>Tessuto sintetico ricavato da bio-plastica. Adatto per la produzione di vestiti base e commercio.</PlasticFiberResearch.description>
 
+    <!-- IncendiaryPlastic Research -->
+    <IncendiaryPlasticResearch.label>plastica incendiaria</IncendiaryPlasticResearch.label>
+    <IncendiaryPlasticResearch.description>Bioplastica rinforzata con composti volatili. Materiale da costruzione estremamente infiammabile per applicazioni tattiche. Maneggiare con cura..</IncendiaryPlasticResearch.description>
+
 </LanguageData>

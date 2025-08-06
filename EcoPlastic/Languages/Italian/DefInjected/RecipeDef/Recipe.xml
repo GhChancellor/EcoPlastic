@@ -26,5 +26,10 @@
     <ChemfuelFromPlasticRecipe.label>produci chemfuel da plastica</ChemfuelFromPlasticRecipe.label>
     <ChemfuelFromPlasticRecipe.description>Converti plastic in chemfuel.</ChemfuelFromPlasticRecipe.description>
     <ChemfuelFromPlasticRecipe.jobString>Converto plastic in chemfuel</ChemfuelFromPlasticRecipe.jobString>
+
+    <!-- IncendiaryPlastic -->
+    <IncendiaryPlasticRecipe.label>Plastica incediaria</IncendiaryPlasticRecipe.label>
+    <IncendiaryPlasticRecipe.description>Bioplastica rinforzata con composti volatili. Materiale da costruzione estremamente infiammabile per applicazioni tattiche. Maneggiare con cura.</IncendiaryPlasticRecipe.description>
+    <IncendiaryPlasticRecipe.jobString>Converto bio plastica in plastica incediaria </IncendiaryPlasticRecipe.jobString>
 </LanguageData>
 

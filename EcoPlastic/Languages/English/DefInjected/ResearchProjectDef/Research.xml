@@ -18,4 +18,8 @@
     <PlasticFiberResearch.label>plastic fiber</PlasticFiberResearch.label>
     <PlasticFiberResearch.description>Synthetic textile fiber from bio-plastic. Suitable for clothing production and textile crafting.</PlasticFiberResearch.description>
 
+    <!-- IncendiaryPlastic -->
+    <IncendiaryPlasticResearch.label>Incendiary Plastic</IncendiaryPlasticResearch.label>
+    <IncendiaryPlasticResearch.description>Bio-plastic infused with volatile compounds. Extremely flammable construction material for tactical applications. Handle with care.</IncendiaryPlasticResearch.description>
+
 </LanguageData>

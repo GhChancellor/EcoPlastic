@@ -76,8 +76,23 @@
         <researchViewY>3.50</researchViewY>
         <tab>EcoPlastic</tab>
     </ResearchProjectDef>
+
+    <!-- IncendiaryPlastic Research-->
+    <ResearchProjectDef>
+        <defName>IncendiaryPlasticResearch</defName>
+        <label>IncendiaryPlasticResearch.label</label>
+        <description>IncendiaryPlasticResearch.description</description>
+        <baseCost>300</baseCost> <!-- research -->
+        <techLevel>Industrial</techLevel>
+        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+            <li>Electricity</li>
+            <li>BiofuelRefining</li>
+            <li>PlasticBasicResearch</li>
+        </prerequisites>
+        <researchViewX>0.50</researchViewX> <!-- Position on tab research -->
+        <researchViewY>0.40</researchViewY>
+        <tab>EcoPlastic</tab>
+    </ResearchProjectDef>
 </Defs>
-
-
 
 

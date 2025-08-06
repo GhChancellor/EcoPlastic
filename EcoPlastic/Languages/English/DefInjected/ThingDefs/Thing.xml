@@ -18,6 +18,12 @@
     <PlasticFiber.label>plastic fiber</PlasticFiber.label>
     <PlasticFiber.description>Synthetic textile fiber from bio-plastic. Suitable for clothing production and textile crafting.</PlasticFiber.description>
 
+    <!-- WoodPlanks -->
+    <WoodPlanks.label>Wood planks</WoodPlanks.label>
+    <WoodPlanks.description>Useful for building structures and weapons. Good fuel for campfires and generators, and can be refined into chemfuel.</WoodPlanks.description>
+
+    <!-- IncendiaryPlastic -->
+    <IncendiaryPlastic.label>Incendiary Plastic</IncendiaryPlastic.label>
+    <IncendiaryPlastic.description>Bio-plastic infused with volatile compounds. Extremely flammable construction material for tactical applications. Handle with care.</IncendiaryPlastic.description>
+
 </LanguageData>
-
-

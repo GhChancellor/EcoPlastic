@@ -25,5 +25,11 @@
     <ChemfuelFromPlasticRecipe.label>make chemfuel from plastic</ChemfuelFromPlasticRecipe.label>
     <ChemfuelFromPlasticRecipe.description>Convert plastic into chemfuel.</ChemfuelFromPlasticRecipe.description>
     <ChemfuelFromPlasticRecipe.jobString>converting plastic to chemfuel</ChemfuelFromPlasticRecipe.jobString>
+
+    <!-- IncendiaryPlastic -->
+    <IncendiaryPlasticRecipe.label>make incendiary plastic</IncendiaryPlasticRecipe.label>
+    <IncendiaryPlasticRecipe.description>Bio-plastic infused with volatile compounds. Extremely flammable construction material for tactical applications. Handle with care.</IncendiaryPlasticRecipe.description>
+    <IncendiaryPlasticRecipe.jobString>converting bio plastic to incendiary plastic </IncendiaryPlasticRecipe.jobString>
+
     
 </LanguageData>

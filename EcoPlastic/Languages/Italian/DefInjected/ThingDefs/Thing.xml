@@ -18,4 +18,12 @@
     <PlasticFiber.label>fibra plastica</PlasticFiber.label>
     <PlasticFiber.description>Tessuto sintetico ricavato da bio-plastica. Adatto per la produzione di vestiti base e commercio.</PlasticFiber.description>
 
+    <!-- WoodPlanks -->
+    <WoodPlanks.label>Assi di legno</WoodPlanks.label>
+    <WoodPlanks.description>Utile per costruire strutture, armi, generatori elettrici e falò da campo. Può essere rifinito in Chemfuel.</WoodPlanks.description>
+
+    <!-- IncendiaryPlastic -->
+    <IncendiaryPlastic.label>plastica incendiaria</IncendiaryPlastic.label>
+    <IncendiaryPlastic.description>Bioplastica rinforzata con composti volatili. Materiale da costruzione estremamente infiammabile per applicazioni tattiche. Maneggiare con cura.</IncendiaryPlastic.description>
+    
 </LanguageData>
